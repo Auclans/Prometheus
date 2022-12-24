@@ -1,0 +1,94 @@
+/* ---------- TAGS ---------- */
+
+img {
+  width: 30vw;
+  height: 30vh;
+  margin: 3vh;
+}
+
+/* ---------- CLASSES ---------- */
+
+/* Whole matrix div */
+.grid {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+/* Each row of the matrix div */
+.rows {
+  color: red;
+  margin: 0.5vh 0;
+}
+
+/* Each element (span) of the matrix div */
+.nodes {
+  border-radius: 50%;
+  shape-outside: circle();
+  clip-path: circle();
+  background-color: lightblue;
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vh;
+}
+
+/* Actual position */
+.position {
+  border-radius: 50%;
+  shape-outside: circle();
+  clip-path: circle();
+  background-color: lightgreen;
+  display: inline-block;
+  width: 5vw;
+  height: 5vh;
+}
+
+/* End point */
+.finish {
+  border-radius: 50%;
+  shape-outside: circle();
+  clip-path: circle();
+  background-color: lightpink;
+  display: inline-block;
+  width: 5vw;
+  height: 5vh;
+}
+
+/* Forbidden zones */
+.redZones {
+  border-radius: 50%;
+  shape-outside: circle();
+  clip-path: circle();
+  background-color: red;
+  display: inline-block;
+  width: 5vw;
+  height: 5vh;
+}
+
+.algosButtons {
+  position: absolute;
+  right: 11vw;
+  top: 10vh;
+}
+
+.startButton {
+  position: absolute;
+  left: 11vw;
+  top: 7.5vh;
+}
+
+.instructionsButton {
+  position: absolute;
+  left: 11vw;
+  top: 9vh;
+}
+
+.moveButtons {
+  text-align: center;
+}
+
+.upButton {
+  position: absolute;
+  left: 47.5vw;
+}
+
+/* ---------- IDS ---------- */
