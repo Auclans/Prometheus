@@ -1,6 +1,6 @@
 import React from "react";
-import redZones from "./redZones.js";
-import startFinish from "./startFinish.js";
+import redZones from "../redZones.js";
+import startFinish from "../startFinish.js";
 import StartButton from "./StartButton.jsx";
 
 function Start(props) {
@@ -31,6 +31,8 @@ function Start(props) {
   var setSolutionShown = props.solutionShown[1];
 
   var setAlgosRestart = props.algosRestart[1];
+
+  var setDijkstraPress = props.setDijkstraPress;
 
   // This is the redirect function of the click
   // We will repeat the strategy of taking advantage of the
@@ -67,6 +69,7 @@ function Start(props) {
     setAlgosButtons(true);
     setMoveButtons(true);
     setSolutionShown(false);
+    setDijkstraPress(true)
   }
 
   return (

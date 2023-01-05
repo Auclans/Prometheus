@@ -1,5 +1,5 @@
 import React from "react";
-import move from "./move";
+import move from "../move";
 import ButtonsMove from "./ButtonsMove.jsx";
 
 function Buttons(props) {

@@ -86,8 +86,8 @@ function bfs(fullActualNode, fullAllNodes, algosRestart) {
   while (node.isFinish !== true) {
     // We pop the actual node from the queue
     node = queue.shift();
-    shiftPath += 25;
-    shiftRestart += 25;
+    shiftPath += 20;
+    shiftRestart += 20;
 
     var yPosition = node.key[0];
     var xPosition = node.key[1];

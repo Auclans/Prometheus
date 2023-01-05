@@ -1,7 +1,7 @@
 import React from "react";
-import dfs from "./dfs.js";
-import bfs from "./bfs.js";
-import dijkstra from "./dijkstra.js";
+import dfs from "../dfs.js";
+import bfs from "../bfs.js";
+import dijkstra from "../dijkstra.js";
 import AlgosButtons from "./AlgosButtons.jsx";
 
 function Solutions(props) {
@@ -14,6 +14,10 @@ function Solutions(props) {
   var setSolutionShown = props.solutionShown[1];
 
   var algosRestart = props.algosRestart[0];
+
+  var dijkstraPressed = props.dijkstraPressed
+
+  var setDijkstraPress = props.setDijkstraPress
 
   function algorithm(event) {
     setSolutionShown(true);
@@ -29,11 +33,12 @@ function Solutions(props) {
       bfs(fullActualNode, fullAllNodes, algosRestart);
     } else if (algorithm === "Dijkstra") {
       dijkstra(fullActualNode, fullAllNodes, algosRestart);
+      setDijkstraPress(false)
     }
   }
 
   return (
-    <div>{algosButtons ? <AlgosButtons algorithm={algorithm} /> : null}</div>
+    <div>{!algosButtons ? null : dijkstraPressed ? <AlgosButtons algorithm={algorithm} /> : null}</div>
   );
 }
 

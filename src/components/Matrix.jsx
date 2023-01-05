@@ -1,6 +1,6 @@
 import React from "react";
 import Node from "./Node.jsx";
-import nodesGrid from "./nodesGrid";
+import nodesGrid from "../nodesGrid";
 
 // Given that the nodes are a 2d array [ [] ...]
 // we have to map each inner array and repeat
